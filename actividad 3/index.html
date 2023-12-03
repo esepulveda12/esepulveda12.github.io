@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDaly Estampados </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #e0e5ec;
+            background-image: url('fondodaly.png'); 
+            background-position: center;
+            background-repeat: no-repeat ;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .header {
+            padding: 20px;
+        }
+
+        .logo {
+            max-width: 150px; 
+            margin: 0 auto 20px;
+        }
+
+        .form-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #ffffff;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="Daly.png" alt="Daly"> 
+    </div>
+
+    <h1>Bienvenido a nuestra Empresa de Estampados</h1>
+    <p>¡Personaliza tus productos con nosotros!</p>
+
+    <div class="form-container">
+        <h2>Contáctanos</h2>
+        <form action="DDaly.php" method="post">
+            <input type="text" name="nombre" placeholder="Nombre" required><br>
+            <input type="text" name="apellido" placeholder="Apellido" required><br>
+            <input type="tel" name="telefono" placeholder="Teléfono" required><br>
+            <input type="text" name="producto" placeholder="Producto a Estampar" required><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
